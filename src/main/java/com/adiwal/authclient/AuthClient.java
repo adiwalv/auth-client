@@ -17,13 +17,13 @@ import org.springframework.web.filter.CorsFilter;
 @EnableResourceServer
 public class AuthClient {
 
-	@Value("${security.tokenUrl}")
+	@Value("${security.tokenurl}")
 	String tokenUrl;
 
-	@Value("${security.clientId}")
+	@Value("${security.clientid}")
 	String clientId;
 
-	@Value("${security.clientSecret}")
+	@Value("${security.clientsecret}")
 	String clientSecret;
 
 	@Bean
