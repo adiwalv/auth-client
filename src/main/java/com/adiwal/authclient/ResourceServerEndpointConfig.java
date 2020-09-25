@@ -13,7 +13,6 @@ public class ResourceServerEndpointConfig extends ResourceServerConfigurerAdapte
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/").permitAll()
-                .antMatchers("/api/**").authenticated();
+                .antMatchers("/**").authenticated();
     }
 }
