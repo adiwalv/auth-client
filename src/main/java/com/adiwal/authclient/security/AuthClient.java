@@ -2,7 +2,7 @@
  * © Vikas Adiwal (adiwalv@gmail.com) 2020. All rights reserved.
  * CONFIDENTIAL AND PROPRIETARY INFORMATION OF VIKAS ADIWAL.
  */
-package com.adiwal.authclient;
+package com.adiwal.authclient.security;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;

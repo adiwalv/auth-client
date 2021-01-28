@@ -2,7 +2,7 @@
  * © Vikas Adiwal (adiwalv@gmail.com) 2020. All rights reserved.
  * CONFIDENTIAL AND PROPRIETARY INFORMATION OF VIKAS ADIWAL.
  */
-package com.adiwal.authclient;
+package com.adiwal.authclient.security;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,7 +23,6 @@ public class ResourceServerEndpointConfig extends ResourceServerConfigurerAdapte
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        log.info("port ssec: {}", managementPort);
         http.authorizeRequests()
                 .requestMatchers(checkPort(managementPort)).permitAll()
                 .anyRequest().authenticated();
