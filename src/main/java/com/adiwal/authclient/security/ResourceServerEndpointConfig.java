@@ -24,6 +24,8 @@ public class ResourceServerEndpointConfig extends ResourceServerConfigurerAdapte
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
+                .antMatchers("/blog/*").permitAll()
+                .antMatchers("/blog*").permitAll()
                 .requestMatchers(checkPort(managementPort)).permitAll()
                 .anyRequest().authenticated();
     }
