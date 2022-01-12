@@ -11,10 +11,10 @@
 	<parent>
 		<groupId>com.adiwal</groupId>
 		<artifactId>adiwal-parent</artifactId>
-		<version>1.4</version>
+		<version>1.5</version>
 	</parent>
 	<artifactId>auth-client</artifactId>
-	<version>0.0.13</version>
+	<version>0.0.14</version>
 	<name>auth-client</name>
 	<description>Authentication client for Adiwal.com</description>
 
